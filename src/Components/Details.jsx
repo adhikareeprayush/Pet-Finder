@@ -13,7 +13,7 @@ const Details = () => {
     // get the pet from id
     async function requestPetFromId() {
         const res = await fetch(
-            `http://pets-v2.dev-apis.com/pets?id=${id}`
+            `https://pets-v2.dev-apis.com/pets?id=${id}`
         );
         const json = await res.json();
         setPet(json.pets[0]);
